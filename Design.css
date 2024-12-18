@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #333;
+}
+
+header {
+    background-color: #0078d7;
+    color: white;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.calendar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2rem;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+.weekdays, .days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    width: 300px;
+}
+
+.weekdays div, .days div {
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.days div {
+    height: 50px;
+}
+
+.days div.active {
+    background-color: #0078d7;
+    color: white;
+}
+
+.task-section {
+    margin: 2rem;
+    text-align: center;
+}
+
+form {
+    margin-bottom: 1rem;
+}
+
+input {
+    padding: 0.5rem;
+    margin: 0.5rem;
+}
+
+button {
+    padding: 0.5rem 1rem;
+    background-color: #0078d7;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
